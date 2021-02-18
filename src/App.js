@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/index.scss';
+import { Route, BrowserRouter as Router, Redirect, Switch } from 'react-router-dom'
+import MainFrame from './MainFrame';
+import DashboardPage from './pages/DashboardPage';
+import CampaignPage from './pages/CampaignPage';
+import InfluencerPage from './pages/InfluencerPage';
+import StatisticsPage from './pages/StatisticsPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Router>
+        <MainFrame>
+          <Switch>
+
+            <Route exact path="/" component={DashboardPage} />
+            <Route exact path="/campaings" component={CampaignPage} />
+            <Route exact path="/influencers" component={InfluencerPage} />
+            <Route exact path="/statistics" component={StatisticsPage} />
+
+            <Redirect to='/' />
+
+          </Switch>
+        </MainFrame>
+      </Router>
     </div>
   );
 }

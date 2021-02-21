@@ -31,6 +31,17 @@ body {
   height: 34px;
 }
 
+.SecondaryButton{
+  width :112px;
+  height: 34px;
+  font-size: 10px;
+  color: $main-color;
+  text-align: center;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  opacity: 1;
+}
+
 .StatusTag {
   color: $light-grey;
   border: 1px solid $light-grey;

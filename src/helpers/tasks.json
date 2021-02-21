@@ -1,0 +1,33 @@
+{
+    "tasks":[
+        {
+            "id" : "23231323",
+            "type" : "1",
+            "name" : "Ellaria Dorne",
+            "happening" : "uploaded instagram contet for proof to your campign 'Nike Sneaker Campaign II'",
+            "date" : "02.07.2016",
+            "image" : "https://i.pinimg.com/originals/97/ed/6b/97ed6b370803649addbf66144c18c194.png",
+            "message" : "Who sasy you can't be elegant in sneakers?! :)",
+            "hashtags" : ["nike", "sneakers", "morningoutfit",  "liveyourlife",  "fashion",  "dailyfashion", "fashionista"]
+        },
+        {
+            "id" : "asdsad",
+            "type" : "2",
+            "name" : "Amy Champeon",
+            "instagram" : 34567,
+            "snapchat" : 3567,
+            "happening" : "just applied to your open campaign 'Tennis clothing for men'",
+            "image" : "https://i.pinimg.com/originals/97/ed/6b/97ed6b370803649addbf66144c18c194.png"
+        },
+        {
+            "id" : "sdggfsdf",
+            "type" : "1",
+            "name" : "Mike Jones",
+            "happening" : "published content to instagram for campign '#DOUYOUYOGA'",
+            "date" : "02.07.2016",
+            "image" : "https://i.pinimg.com/originals/97/ed/6b/97ed6b370803649addbf66144c18c194.png",
+            "message" : "My new yoga pants from Nike has arrived, I adore it!",
+            "hashtags" : ["nike", "yoga", "sun",  "namaeste",  "liveyourlife",  "sport", "sporty", "nature"]
+        }
+    ]
+}

@@ -1,21 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Campaign from '../components/dashboard/campaign/Campaign'
 import CampaignsContainer from '../components/dashboard/campaign/CampaignsContainer'
 import Influencer from '../components/dashboard/campaign/Influencer'
-import MyTodosContainer from '../components/dashboard/MyTodosContainer'
+import MyTodosContainer from '../components/dashboard/todos/MyTodosContainer'
 import StatisticsContainer from '../components/dashboard/StatisticsContainer'
-import Task from '../components/dashboard/Task'
+import NewContent from '../components/dashboard/todos/NewContent'
+import NewApplication from '../components/dashboard/todos/NewApplication'
 import TopInfluencersContainer from '../components/dashboard/TopInfluencersContainer'
 import PrimaryButton from '../components/ui/buttons/PrimaryButton'
 import PageTitle from '../components/ui/PageTitle'
-import { campaings } from "../helpers/campaings.json"
+import { campaings as campignJSON } from "../helpers/campaings.json"
+import { tasks as taskJSON } from "../helpers/tasks.json"
+import { NEW_CONTENT } from '../helpers/constants'
 
 export default function DashboardPage() {
-    // get todos
-    // get statistics
 
-    const renderCampaigns = () => campaings.map(campaign => <Campaign key={campaign.id} { ...campaign }/>);
-    
+    const [campaings, setCampaings] = useState(campignJSON)
+    const [tasks, setTassks] = useState(taskJSON)
+
+
+    const renderCampaigns = () => campaings.map(campaign => <Campaign key={campaign.id} {...campaign} />);
+    const renderTasks = () => tasks.map(task => {
+        if(task.type === NEW_CONTENT ){
+            return <NewContent key={task.id} {...task} />
+        }else{
+            return <NewApplication key={task.id} {...task} />
+        }
+    })
 
     return (
         <div>
@@ -25,8 +36,8 @@ export default function DashboardPage() {
                 <PrimaryButton name='create a new campaign' />
             </div>
 
-            <div>
-                <div className='MainContainer'>
+            <div style={{ display: 'flex' }}>
+                <div className='MainContainer' style={{ width: '66%', paddingRight: '20px' }}>
                     <CampaignsContainer>
                         {renderCampaigns()}
                     </CampaignsContainer>
@@ -43,10 +54,10 @@ export default function DashboardPage() {
                 </div>
 
 
-                <div className='SideContainer'>
+                <div className='SideContainer' style={{ width: '33%' }}>
 
-                    <MyTodosContainer>
-                        <Task />
+                    <MyTodosContainer total={tasks.length}>
+                        {renderTasks()}
                     </MyTodosContainer>
                 </div>
             </div>

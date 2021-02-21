@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function SecondaryButton() {
+export default function SecondaryButton(props) {
     return (
-        <div>
-            
-        </div>
+        <button className="SecondaryButton"> 
+            {props.text.toUpperCase()}
+        </button>
     )
 }

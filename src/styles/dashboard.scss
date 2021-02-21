@@ -1,13 +1,12 @@
-.CampaignContainer {
-    max-width: 600px;
-    width : 66%;
-
-  .CampaignTitle {
+.Title {
     font-size: 16px;
     color: $grey;
     line-height: 18px;
     margin-bottom: 10px;
   }
+
+.CampaignContainer {
+    max-width: 600px;
 
   .Campaign {
     display: flex;
@@ -58,4 +57,10 @@
       }
     }
   }
+}
+
+
+.TodosContainer{
+
+  
 }

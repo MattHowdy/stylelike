@@ -4,6 +4,7 @@ import ReactECharts from 'echarts-for-react';
 export default function LineChart(props) {
     return (
         <ReactECharts
+        style={{ height: '200px'}}
         option={{
           xAxis: {
             type: 'category',

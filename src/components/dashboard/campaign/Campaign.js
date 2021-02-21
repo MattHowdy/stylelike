@@ -29,8 +29,8 @@ export default function Campaign(props) {
 
             <div className="Statistics">
 
-                {props.snapchat
-                    ? <InstaStat stats={props.instagram} />
+                {props.instagram
+                    ? <InstaStat stats={props.instagram}/>
                     : null
                 }
                 {props.snapchat

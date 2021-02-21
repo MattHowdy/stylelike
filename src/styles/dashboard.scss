@@ -1,7 +1,7 @@
 .CampaignContainer {
     max-width: 600px;
     width : 66%;
-    
+
   .CampaignTitle {
     font-size: 16px;
     color: $grey;
@@ -25,7 +25,7 @@
     }
 
     .MainInfo {
-      width: 50%;
+      width: 35%;
       padding: 20px;
 
       .Influencers {
@@ -40,7 +40,7 @@
     }
 
     .Statistics {
-      padding: 10px;
+      margin: auto;
       .Stat {
         margin: 5px;
 

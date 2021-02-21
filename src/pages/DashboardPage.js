@@ -11,12 +11,14 @@ import PrimaryButton from '../components/ui/buttons/PrimaryButton'
 import PageTitle from '../components/ui/PageTitle'
 import { campaings as campignJSON } from "../helpers/campaings.json"
 import { tasks as taskJSON } from "../helpers/tasks.json"
+import { influencers as influencerJSON } from "../helpers/influencers.json"
 import { NEW_CONTENT } from '../helpers/constants'
 
 export default function DashboardPage() {
 
     const [campaings, setCampaings] = useState(campignJSON)
     const [tasks, setTassks] = useState(taskJSON)
+    const [influencers, setInfluencers] = useState(influencerJSON)
 
 
     const renderCampaigns = () => campaings.map(campaign => <Campaign key={campaign.id} {...campaign} />);
@@ -27,6 +29,7 @@ export default function DashboardPage() {
             return <NewApplication key={task.id} {...task} />
         }
     })
+    const renderInfluencers = () => influencers.map( influencer => <Influencer key={influencer.id} {...influencer}/>)
 
     return (
         <div>
@@ -42,13 +45,12 @@ export default function DashboardPage() {
                         {renderCampaigns()}
                     </CampaignsContainer>
 
-                    <div>
-                        <StatisticsContainer>
 
-                        </StatisticsContainer>
-
+                    <div style={{ display: 'flex', marginTop: '20px', marginBottom :'10px' }}>
+                        <StatisticsContainer/>
+                            
                         <TopInfluencersContainer>
-                            <Influencer />
+                            { renderInfluencers() }
                         </TopInfluencersContainer>
                     </div>
                 </div>

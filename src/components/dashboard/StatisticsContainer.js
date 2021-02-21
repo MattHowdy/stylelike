@@ -1,9 +1,16 @@
 import React from 'react'
 
-export default function StatisticsContainer() {
+export default function StatisticsContainer(props) {
     return (
-        <div>
+        <div className='StatisticsContainer'>
+
+
+            Weekly 
+
+            Monthly
             
+            
+            { props.children }
         </div>
     )
 }

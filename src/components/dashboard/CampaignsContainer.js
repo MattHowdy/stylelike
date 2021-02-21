@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function CampaignsContainer() {
+export default function CampaignsContainer(props) {
     return (
-        <div>
-            CampaignContainer
+        <div className="CampaignContainer">
+            <div className="CampaignTitle">
+                Ongoing Campaign
+            </div>
+            { props.children}
         </div>
     )
 }

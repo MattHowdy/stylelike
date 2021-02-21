@@ -7,25 +7,28 @@ import StatisticsContainer from '../components/dashboard/StatisticsContainer'
 import Task from '../components/dashboard/Task'
 import TopInfluencersContainer from '../components/dashboard/TopInfluencersContainer'
 import PrimaryButton from '../components/ui/buttons/PrimaryButton'
+import PageTitle from '../components/ui/PageTitle'
+import { campaings } from "../helpers/campaings.json"
 
 export default function DashboardPage() {
-
-    // get campaings
     // get todos
     // get statistics
+
+    const renderCampaigns = () => campaings.map(campaign => <Campaign { ...campaign }/>);
+    
 
     return (
         <div>
 
-            My Dashboard
-
-            <PrimaryButton name='newCampaignBtn' />
-
+            <div style={{ display: 'flex', paddingBottom: '24px' }}>
+                <PageTitle text="My Dashboard" />
+                <PrimaryButton name='create a new campaign' />
+            </div>
 
             <div>
-                <div className='Main-Container'>
+                <div className='MainContainer'>
                     <CampaignsContainer>
-                        <Campaign />
+                        {renderCampaigns()}
                     </CampaignsContainer>
 
                     <div>
@@ -40,7 +43,7 @@ export default function DashboardPage() {
                 </div>
 
 
-                <div className='Side-Container'>
+                <div className='SideContainer'>
 
                     <MyTodosContainer>
                         <Task />

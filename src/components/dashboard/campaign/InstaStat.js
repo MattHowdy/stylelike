@@ -10,7 +10,7 @@ export default function InstaStat(props) {
             .map(([key, value]) => {
                 return (
                     <div className="Stat" key={key}>
-                        <div className='StatValue' >{value.toLocaleString().replace(',', ' ') }</div>
+                        <div className='StatValue' >{ window.formatNumber(value)  }</div>
                         <img src='/insta-1.svg' alt='insta-icon' />
                         <span className='StatName' > { key.toUpperCase() } </span>
                     </div>

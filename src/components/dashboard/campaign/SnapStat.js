@@ -9,7 +9,7 @@ export default function SnapStat(props) {
             .map(([key, value]) => {
                 return (
                     <div className="Stat" key={key}>
-                        <div className='StatValue' >{value.toLocaleString().replace(',', ' ') }</div>
+                        <div className='StatValue' >{ window.formatNumber(value) }</div>
                         <img src='/snap-1.svg' alt='snap-icon' />
                         <span className='StatName' > { key.toUpperCase() } </span>
                     </div>

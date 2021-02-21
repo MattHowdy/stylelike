@@ -3,9 +3,8 @@ import SecondaryButton from '../../ui/buttons/SecondaryButton'
 
 export default function TaskFooter() {
     return (
-        <div style={{ display : 'flex'}}>
+        <div className='TaskFooter' >
             <SecondaryButton text="accept" />
-
             <SecondaryButton text="decline"/>
         </div>
     )

@@ -3,10 +3,10 @@
         {
             "id": "1212424",
             "status": "active",
-            "name": "Nike Sneaker Campaing",
+            "name": "NIKE Sneaker Campaing",
             "version" : "Summer II",
             "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/onz7av6cj1bloettw0wr/killshot-2-leather-mens-shoe-zrq1wk.jpg",
-            "closeDate": "2021-02-25",
+            "closeDate": "2021-02-26",
             "influencers": 9,
             "instagram": {
                 "link": "xyx",
@@ -18,7 +18,7 @@
                 "link" : "yx",
                 "opens": 10782,
                 "screens": 789,
-                "completion": 67
+                "completion": "67%"
             }
         },
         {
@@ -27,7 +27,7 @@
             "name": "#DOYOUYOUGA Campaign",
             "version" : "",
             "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/onz7av6cj1bloettw0wr/killshot-2-leather-mens-shoe-zrq1wk.jpg",
-            "closeDate": "2021-03-02",
+            "closeDate": "2021-03-03",
             "influencers": 11,
             "instagram":  {
                 "link" : "ysdsdf",

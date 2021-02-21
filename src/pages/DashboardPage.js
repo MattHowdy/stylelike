@@ -1,7 +1,7 @@
 import React from 'react'
-import Campaign from '../components/dashboard/Campaign'
-import CampaignsContainer from '../components/dashboard/CampaignsContainer'
-import Influencer from '../components/dashboard/Influencer'
+import Campaign from '../components/dashboard/campaign/Campaign'
+import CampaignsContainer from '../components/dashboard/campaign/CampaignsContainer'
+import Influencer from '../components/dashboard/campaign/Influencer'
 import MyTodosContainer from '../components/dashboard/MyTodosContainer'
 import StatisticsContainer from '../components/dashboard/StatisticsContainer'
 import Task from '../components/dashboard/Task'
@@ -14,7 +14,7 @@ export default function DashboardPage() {
     // get todos
     // get statistics
 
-    const renderCampaigns = () => campaings.map(campaign => <Campaign { ...campaign }/>);
+    const renderCampaigns = () => campaings.map(campaign => <Campaign key={campaign.id} { ...campaign }/>);
     
 
     return (

@@ -31,12 +31,28 @@ body {
   height: 34px;
 }
 
+.StatusTag {
+  color: $light-grey;
+  border: 1px solid $light-grey;
+  margin-right: 10px;
+  padding: 0 5px;
+  border-radius: 2px;
+  font-size: 12px
+}
+
+.StatusDate {
+  color: $light-grey;
+  font-size: 12px;
+}
+
 .PageTitle {
   font-size: 18px;
   color: $grey;
   padding: 5px 10px 5px 0px;
 }
 
-.ContentContainer{
-    padding : 40px
+.ContentContainer {
+  background-color: $main-bg-color;
+  padding: 40px;
+  height: 100vh;
 }

@@ -3,7 +3,7 @@ import Campaign from '../components/dashboard/campaign/Campaign'
 import CampaignsContainer from '../components/dashboard/campaign/CampaignsContainer'
 import Influencer from '../components/dashboard/campaign/Influencer'
 import MyTodosContainer from '../components/dashboard/todos/MyTodosContainer'
-import StatisticsContainer from '../components/dashboard/StatisticsContainer'
+import StatisticsContainer from '../components/dashboard/statistic/StatisticsContainer'
 import NewContent from '../components/dashboard/todos/NewContent'
 import NewApplication from '../components/dashboard/todos/NewApplication'
 import TopInfluencersContainer from '../components/dashboard/TopInfluencersContainer'
@@ -33,7 +33,6 @@ export default function DashboardPage() {
 
     return (
         <div>
-
             <div style={{ display: 'flex', paddingBottom: '24px' }}>
                 <PageTitle text="My Dashboard" />
                 <PrimaryButton name='create a new campaign' />
@@ -46,8 +45,8 @@ export default function DashboardPage() {
                     </CampaignsContainer>
 
 
-                    <div style={{ display: 'flex', marginTop: '20px', marginBottom :'10px' }}>
-                        <StatisticsContainer/>
+                    <div style={{ display: 'flex', marginTop: '20px', marginBottom :'10px' }} id="container">
+                        <StatisticsContainer campaigns={campaings.map(campaing=>campaing.name)}/>
                             
                         <TopInfluencersContainer>
                             { renderInfluencers() }

@@ -1,11 +1,10 @@
 import React from 'react'
+import ContainerTitle from '../../ui/ContainerTitle'
 
 export default function CampaignsContainer(props) {
     return (
         <div className="CampaignContainer">
-            <div className="Title">
-                Ongoing Campaigns
-            </div>
+            <ContainerTitle text='Ongoing Campaigns'/>
             { props.children}
         </div>
     )

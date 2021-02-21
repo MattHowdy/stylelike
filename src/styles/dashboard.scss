@@ -34,14 +34,14 @@
       .Name {
         color: $grey;
         font-size: 16px;
-        padding: 1px 0;
+        line-height: 1.1
       }
     }
 
     .Statistics {
       margin: auto;
       .Stat {
-        margin: 5px;
+        margin: 0 10px;
 
         .StatValue {
           color: $main-color;
@@ -93,7 +93,7 @@
         padding: 0 5px;
 
         .message {
-          color: #484848;
+          color: $grey;
           font-size: 10px;
         }
         .Date {
@@ -131,15 +131,38 @@
 
 .StatisticsContainer {
   width: 50%;
+  margin-right: 20px;
+
+  .Statistics {
+    background: white;
+    padding: 20px 0px;
+  }
+  .Tabs {
+    justify-content: center;
+  }
+
+  .Tablinks {
+    font-size: 12px;
+    color: $grey;
+    padding-bottom: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .active{
+    border-bottom: 3px solid $main-color;
+  }
+
+  .Buttons{
+    text-align: center;
+  }
 }
 
 .TopInfluencersContainer {
   width: 50%;
 
-  .TopInfluencers{  
+  .TopInfluencers {
     background: white;
     padding: 8px;
-
 
     .Influencer {
       display: flex;
@@ -157,7 +180,7 @@
 
         div {
           font-size: 12px;
-          color: #484848;
+          color: $grey;
         }
         span {
           font-size: 10px;

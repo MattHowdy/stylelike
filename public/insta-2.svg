@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <defs>
+        <rect id="path-1" x="42" y="455" width="300" height="354" rx="3"></rect>
+        <filter x="-2.3%" y="-1.4%" width="104.7%" height="104.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0847769475 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="56" y="670" width="126" height="55" rx="3"></rect>
+        <filter x="-0.8%" y="-1.8%" width="101.6%" height="103.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.585990646   0 0 0 0 0.00102890561   0 0 0 0 0.193638259  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M_HOMEPAGE_PR" transform="translate(-99.000000, -704.000000)">
+            <rect id="Rectangle-1" fill="#EAE9EB" x="-207" y="0" width="1440" height="1924"></rect>
+            <g id="Rectangle-209">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Rectangle-215">
+                <use fill="#F60051" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            </g>
+            <text id="POSTS" font-family="Helvetica" font-size="8" font-weight="normal" fill="#FFFFFF">
+                <tspan x="108.441406" y="711">POSTS</tspan>
+            </text>
+            <path d="M100.015287,704 L105.894794,704 C106.453157,704 106.91,704.413392 106.91,705.015206 L106.91,710.894875 C106.91,711.496689 106.453157,711.910081 105.894794,711.910081 L100.015287,711.910081 C99.4567616,711.910081 99,711.496689 99,710.894875 L99,705.015206 C99,704.413392 99.4567616,704 100.015287,704 L100.015287,704 L100.015287,704 Z M104.762148,704.878844 C104.566254,704.878844 104.406176,705.039003 104.406176,705.234978 L104.406176,706.087345 C104.406176,706.283239 104.566254,706.44348 104.762148,706.44348 L105.65618,706.44348 C105.852074,706.44348 106.012314,706.283239 106.012314,706.087345 L106.012314,705.234978 C106.012314,705.039003 105.852074,704.878844 105.65618,704.878844 L104.762148,704.878844 L104.762148,704.878844 L104.762148,704.878844 Z M106.01605,707.345145 L105.319862,707.345145 C105.385729,707.560207 105.421383,707.788019 105.421383,708.023709 C105.421383,709.339416 104.320412,710.405951 102.962553,710.405951 C101.604776,710.405951 100.503967,709.339416 100.503967,708.023709 C100.503967,707.787856 100.53954,707.560125 100.605488,707.345145 L99.8790062,707.345145 L99.8790062,710.686473 C99.8790062,710.859383 100.020485,711.000944 100.193476,711.000944 L105.701742,711.000944 C105.874733,711.000944 106.016212,710.859464 106.016212,710.686473 L106.016212,707.345145 L106.01605,707.345145 L106.01605,707.345145 Z M102.962472,706.398567 C102.085171,706.398567 101.373877,707.087689 101.373877,707.937863 C101.373877,708.788038 102.085171,709.47716 102.962472,709.47716 C103.839854,709.47716 104.551229,708.788038 104.551229,707.937863 C104.551229,707.087689 103.839935,706.398567 102.962472,706.398567 L102.962472,706.398567 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

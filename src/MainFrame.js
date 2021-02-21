@@ -5,15 +5,13 @@ import Header from './components/ui/navbar/Header'
 export default function MainFrame(props) {
   return (
     <div>
+      <Header/>      
 
-      <Header/>
-      
-      <div className='content'>
+      <div className='ContentContainer'>
         {props.children}
       </div>
 
       <Footer/>
-
     </div>
   )
 }

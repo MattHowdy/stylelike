@@ -1,0 +1,42 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.Link {
+  text-decoration: none;
+  font-size: 1em;
+  color: $grey;
+}
+
+.Link:hover {
+  color: red;
+}
+
+.Link:focus {
+  color: red;
+}
+
+.PrimaryButton {
+  background: $main-color;
+  border: 1px solid #e6004c;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  height: 34px;
+}
+
+.PageTitle {
+  font-size: 18px;
+  color: $grey;
+  padding: 5px 10px 5px 0px;
+}
+
+.ContentContainer{
+    padding : 40px
+}

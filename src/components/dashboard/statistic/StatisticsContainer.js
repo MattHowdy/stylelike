@@ -39,9 +39,9 @@ export default function StatisticsContainer(props) {
       { value: 23235, social: 'snap', name: 'snaps' },
       { value: 312, social: 'snap', name: 'opens' }
     ]
-    const buttons = [<JumboPrimaryButton value='123' social='insta' name='posts' />]
+    const buttons = [<JumboPrimaryButton key='posts' value='123' social='insta' name='posts' />]
     secondaryBtns.forEach(element => {
-      buttons.push(<JumboSecondaryButton value={element.value} social={element.social} name={element.name} />)
+      buttons.push(<JumboSecondaryButton key={element.name} value={element.value} social={element.social} name={element.name} />)
     })
 
     return buttons

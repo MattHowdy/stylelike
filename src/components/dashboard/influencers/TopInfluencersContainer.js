@@ -1,10 +1,10 @@
 import React from 'react'
-import ContainerTitle from '../ui/ContainerTitle'
+import ContainerTitle from '../../ui/ContainerTitle'
 
 export default function TopInfluencersContainer(props) {
     return (
         <div className='TopInfluencersContainer'>
-            <ContainerTitle text='Top influencers'/>
+            <ContainerTitle text='Top influencers' />
 
             <div className='TopInfluencers'>
                 {props.children}

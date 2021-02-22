@@ -1,3 +1,5 @@
+import moment from 'moment'
+
 export const NEW_CONTENT = "1"
 export const APPLICATION = "1"
 export const WEEKLY='weekly'
@@ -12,3 +14,10 @@ window.formatNumber = (number)=>{
 window.capitalize = (string)=>{
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+
+window.formatDate = function (date) {
+    // return date
+    return moment(date).format('DD-MM-YYYY')
+  };
+  

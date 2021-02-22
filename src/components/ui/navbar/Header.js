@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const createMenuItems = () => {
@@ -23,6 +25,9 @@ export default function Header() {
             <div className='MenuItems'>
                 {createMenuItems()}
             </div>
+
+            <FontAwesomeIcon icon={faBars} className='Hamburger'/>
+
 
             <div className='Profile'>
                 <img height='24px'  src='/mail.svg' alt="mail" />

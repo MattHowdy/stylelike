@@ -16,11 +16,10 @@ const getData = (data) => {
 }
 
 export default function Table(props) {
-    console.log();
     return (
         <div>
             <ContainerTitle text="UX Hastags" />
-            <div className='TableContainer'style={{ padding: '20px', backgroundColor: 'white' }}>
+            <div className='TableContainer'>
                 <table className="Table">
                     <thead>
                         <tr>

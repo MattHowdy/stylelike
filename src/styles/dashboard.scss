@@ -1,17 +1,42 @@
+.DashBoardContainer {
+  display: flex;
+  position: relative;
+}
+.MainContainer {
+  width: 66%;
+  padding-right: 20px;
+  position: relative;
+
+  .Secondary {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+.SideContainer {
+  width: 33%;
+}
+
+.ContentContainer {
+  background-color: $main-bg-color;
+  padding: 40px;
+  min-height: 100vh;
+  position: relative;
+}
+
 .Title {
   font-size: 16px;
   color: $grey;
   line-height: 18px;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .CampaignContainer {
-  // max-width: 600px;
-
   .Campaign {
     display: flex;
     margin: 10px 0;
-    height: 114px;
+    min-height: 114px;
     background: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
     border-radius: 3px;
@@ -25,7 +50,7 @@
 
     .MainInfo {
       width: 35%;
-      padding: 20px;
+      padding: 16px;
 
       .Influencers {
         color: $main-color;
@@ -60,7 +85,7 @@
 }
 
 .TodosContainer {
-  max-width: 320px;
+  max-width: 450px;
 
   .TodoTasks {
     border: 5px solid $light-grey;
@@ -193,17 +218,68 @@
 
 .TableContainer {
   background-color: white;
-  padding: 20px;
   border-radius: 3px 3px 0 0;
-  
+  color: $grey;
+
   .Table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0px 0px;
 
+
     th,
     td {
       border: 1px solid $light-grey;
+      padding: 5px;
+      color: $grey;
     }
+  }
+}
+
+@media (max-width: 450px) {
+  .DashBoardContainer {
+    display: block;
+    width: 100%;
+  }
+
+  .MainContainer {
+    width: 100%;
+    padding: 0;
+
+    .Secondary {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .SideContainer {
+    display: block;
+    width: 100%;
+  }
+
+  .ContentContainer {
+    padding: 20px;
+    padding-bottom: 50px
+  }
+
+  .StatisticsContainer {
+    width: 100%;
+  }
+
+  .CampaignContainer .Campaign {
+    .MainInfo {
+      display: block;
+      width: 100%;
+    }
+    .Statistics {
+      display: none;
+    }
+  }
+
+  .TopInfluencersContainer {
+    display: block;
+    width: 100%;
   }
 }

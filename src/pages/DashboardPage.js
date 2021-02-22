@@ -18,9 +18,9 @@ import Table from '../components/table/Table'
 
 export default function DashboardPage() {
 
-    const [campaings, setCampaings] = useState(campignJSON)
-    const [tasks, setTassks] = useState(taskJSON)
-    const [influencers, setInfluencers] = useState(influencerJSON)
+    const [campaings] = useState(campignJSON)
+    const [tasks] = useState(taskJSON)
+    const [influencers] = useState(influencerJSON)
     const [twitterData, setTwitterData] = useState([])
 
     useEffect(() => {
@@ -51,14 +51,14 @@ export default function DashboardPage() {
                 <PrimaryButton name='create a new campaign' />
             </div>
 
-            <div style={{ display: 'flex' }}>
-                <div className='MainContainer' style={{ width: '66%', paddingRight: '20px' }}>
+            <div className='DashBoardContainer'>
+                <div className='MainContainer' >
                     <CampaignsContainer>
                         {renderCampaigns()}
                     </CampaignsContainer>
 
 
-                    <div style={{ display: 'flex', marginTop: '20px', marginBottom: '10px' }} id="container">
+                    <div className='Secondary' id="container">
                         <StatisticsContainer campaigns={campaings.map(campaing => campaing.name)} />
 
                         <TopInfluencersContainer>
@@ -68,7 +68,7 @@ export default function DashboardPage() {
                 </div>
 
 
-                <div className='SideContainer' style={{ width: '33%' }}>
+                <div className='SideContainer' >
                     <MyTodosContainer total={tasks.length}>
                         {renderTasks()}
                     </MyTodosContainer>
